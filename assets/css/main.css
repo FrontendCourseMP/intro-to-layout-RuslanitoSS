@@ -1,8 +1,14 @@
 :root {
-    --primary-color: #1a1e42;
-    --strong-color: #F7931A;
-    --faded-color: #98A2B3;
-    font-size: 62.5% ;
+    --color-dark-blue: #1a1e42;
+    --color-dark-blue-faded: rgb(26, 30, 66, 0.80);
+    --color-orange: #F7931A;
+    --color-white: #fff;
+    --color-grey-500: #667085;
+    --color-grey-400: #98A2B3;
+    --color-grey-300: #D0D5DD;
+    --color-grey-100: #F2F4F7;
+    --color-green: #00B67A;
+    font-size: 62.5%;
 }
 /* space-grotesk-regular - latin */
 @font-face {
@@ -30,18 +36,92 @@
   }
 body {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    background-color: var(--color-white);
+    margin: 0;
+}
+p {
+  font-size: 1.5rem;
+  color: var(--color-dark-blue-faded);
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+}
+#form, #why-rewallet, #process, #promise, #get-in-touch {
+  background-color: var(--color-dark-blue);
+}
+#form p , #why-rewallet p, #process p, #promise p, #get-in-touch p {
+  background-color: var(--color-dark-blue);
+  color: var(--color-grey-300);
+}
+#form h2, #why-rewallet h2, #process h2, #promise h2, #get-in-touch h2 {
+  background-color: var(--color-dark-blue);
+  color: white;
+}
+#form h3 , #why-rewallet h3, #process h3, #promise h3, #get-in-touch h3 {
+  background-color: var(--color-dark-blue);
+  color: white;
+}
+
+#why-rewallet li, #promise li{
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #2A2D51;
+}
+.footer {
+  background-color: var(--color-grey-100);
 
 }
-h1 {
-    font-size: 3rem;
-    font-weight: 600;
+.wrapper {
+  border: black 2px solid;
+  width: 100%;
+  max-width: 700px;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
 strong {
     color: var(--strong-color)
 }
 
+.wallet-list{
+  color: var(--color-grey);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.wallet-list li {
+  display: flex;
+  width: 170px;
+  align-items: center;
+  gap: 8px;
+}
 a {
     text-decoration: none;
     color: inherit;
+}
+.btn {
+  border: none;
+}
+.call-to-action {
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: var(--strong-color);
+    display: flexbox;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
 }
