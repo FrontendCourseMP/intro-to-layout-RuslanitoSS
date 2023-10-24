@@ -49,7 +49,8 @@
         <section class="landing">
             <div class="wrapper">
                 <div>
-                    <h2> Regain access to your <strong> crypto wallet </strong> </h2>
+                    <h1> ReWallet - Wallet recovery service </h1>
+                    <p class="heading"> Regain access to your <strong> crypto wallet </strong> </p>
                     <!-- Тексты не переход на новоб строку вовремя. Слишком длинный. Не только здесь-->
                     <p>
                         You've lost access to your crypto wallet?
@@ -299,9 +300,9 @@
                     customers are saying about us.
                 </p>
                 <ul>
-                    <li>
+                    <li class="review">
                         <blockquote>
-                            <img src="" alt="5 stars">
+                            <img src="./assets/icons/stars-5.png" alt="5 stars">
                             <p>
                                 By a stupid mistake,
                                 I wrote down only 11 of 12 words of
@@ -317,8 +318,8 @@
                         </blockquote>
                     </li>
                 </ul>
-                <a href="" class="trustpilot btn">
-                    See our reviews on <img src="" alt=""> Trustpilot
+                <a href="" class="trustpilot-btn btn">
+                    See our reviews on <img src="./assets/icons/star.png" alt=""> Trustpilot
                 </a>
             </div>
         </section>
@@ -329,10 +330,10 @@
                     The latest industry news,
                     interviews, technologies, and resources.
                 </p>
-                <ul>
+                <ul class="articles">
                     <li>
                         <a href="index.html">
-                            <img src="" alt="News">
+                            <img src="./assets/icons/news-1.png" alt="News preview" width="100%">
                             <p> <img src="" alt=""> Bruno Krauss </p>
                             <time datetime="28-04-2023">28/04/2023</time>
                             <h3>How to Recover Your Ethereum Presale Wallet:
@@ -343,7 +344,7 @@
                     </li>
                     <li>
                         <a href="index.html">
-                            <img src="" alt="News">
+                            <img src="" alt="News-preview">
                             <p><img src="" alt=""> Bruno Krauss </p>
                             <time datetime="20-04-2023"> 28/04/2023</time>
                             <h3>Trezor Lost Passphrase: What Is an Optional
@@ -390,29 +391,29 @@
                         </p>
                     </li>
                     <li>
-                        <button class="btn"> 
-                            Which wallets do you support? 
-                            <img src="" alt="">
-                        </button>
-                        <p>Здесь явно что-то будет</p>
-                    </li>
-                    <li>
-                        <button class="btn"> 
-                             How do I start a request?
+                        <button class="btn">
+                            Which wallets do you support?
                             <img src="" alt="">
                         </button>
                         <p>Здесь явно что-то будет</p>
                     </li>
                     <li>
                         <button class="btn">
-                            How does payment work? 
+                            How do I start a request?
                             <img src="" alt="">
                         </button>
                         <p>Здесь явно что-то будет</p>
                     </li>
                     <li>
                         <button class="btn">
-                             Can I communicate with you in encrypted form? 
+                            How does payment work?
+                            <img src="" alt="">
+                        </button>
+                        <p>Здесь явно что-то будет</p>
+                    </li>
+                    <li>
+                        <button class="btn">
+                            Can I communicate with you in encrypted form?
                             <img src="" alt="">
                         </button>
                         <p> Здесь явно что-то будет </p>
@@ -432,38 +433,43 @@
                         <p>
                             Free evaluation of your case
                         </p>
-                    </li class="V-mark">
-                    <p>
-                        Success Based Remuneration
-                    </p>
-                    </li class="V-mark">
-                    <li>
+                    </li>
+                    <li class="V-mark">
+                        <p>
+                            Success Based Remuneration
+                        </p>
+                    </li>
+                    <li class="V-mark">
                         <p>
                             Service agreement in compliant with EU and US Law
                         </p>
                     </li>
                 </ul>
                 <form id="form" class="dark">
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <p>What wallet is it?</p>
-                    <button class="btn"> Bitcoin </button>
-                    <button class="btn"> Ethereum (ERC-20) </button>
-                    <button class="btn"> Dogecoin </button>
-                    <button class="btn"> Other </button>
+                    <div class="form-wrapper">
+                        <button class="checkmark"></button>
+                        <button class="checkmark"></button>
+                        <button class="checkmark"></button>
+                        <button class="checkmark"></button>
+                        <p>What wallet is it?</p>
+                        <button class="btn"> Bitcoin </button>
+                        <button class="btn"> Ethereum (ERC-20) </button>
+                        <button class="btn"> Dogecoin </button>
+                        <button class="btn"> Other </button>
+                    </div>
                 </form>
             </div>
         </section>
         <section>
             <div class="wrapper">
                 <div id="get-in-touch" class="dark">
-                    <img src="" alt="Bastian Knaf Photo">
-                    <h2> Get in touch! </h2>
-                    <p>Your contact - Bastian Knaf</p>
-                    <a href="mailto:team@rewallet.de"> <img src="" alt="email"> team@rewallet.de </a>
-                    <a href="tel:+49(0)30235913270"> <img src="" alt="telephone"> +49 (0) 30 2359 13270 </a>
+                    <div class="get-in-touch--wrapper">
+                        <img src="" alt="Bastian Knaf Photo">
+                        <h2> Get in touch! </h2>
+                        <p>Your contact - Bastian Knaf</p>
+                        <a href="mailto:team@rewallet.de"> <img src="" alt="email"> team@rewallet.de </a>
+                        <a href="tel:+49(0)30235913270"> <img src="" alt="telephone"> +49 (0) 30 2359 13270 </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -535,7 +541,7 @@
                     fill="#F7931A" />
             </svg>
             <!-- собрать вместе -->
-            <p>4.9</p>
+            <p class="">4.9</p>
 
         </div>
         <div class="wrapper footer_bottom">
