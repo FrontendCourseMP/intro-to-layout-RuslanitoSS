@@ -216,14 +216,10 @@ h2 {
   background-color: #2A2D51;
 }
 
-.dark li p,
-.dark li h3 {
-  margin: 0;
-}
-
 .dark li h3,
 .dark li p {
   background-color: #2A2D51;
+  margin: 0;
 }
 
 .footer {
@@ -282,6 +278,7 @@ a {
   border: none;
   font-size: 1.5rem;
   font-weight: 600;
+  margin: 24px 0px;
 }
 
 .more-btn {
@@ -324,4 +321,24 @@ ol {
 
 .V-mark p {
   margin: 5px 0px;
+}
+.dark li .li-order{
+  display: flex;
+padding: 10px 12px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+background-color: var(--color-dark-blue);
+color: white;
+font-weight: 600;
+}
+#process li, #promise li {
+  margin: 24px 0px;
+}
+#why-rewallet h2, #about h2, #process h2, #promise h2, #testimonials h2{
+  margin-top:0px;
+}
+.dark {
+  padding-bottom: 24px;
 }
