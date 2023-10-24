@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <title> Bocument </title>
+    <title> ReWallet - Wallet recovery service </title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
             <a href="index.html">
                 <img src="./assets/icons/ReWallet.png" alt="ReWallet">
             </a>
-            <button>
+            <button class="btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M3 12H21M3 6H21M3 18H21" stroke="#475467" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
@@ -50,16 +50,17 @@
             <div class="wrapper">
                 <div>
                     <h2> Regain access to your <strong> crypto wallet </strong> </h2>
+                    <!-- Тексты не переход на новоб строку вовремя. Слишком длинный. Не только здесь-->
                     <p>
                         You've lost access to your crypto wallet?
                         Then you've come to the right place.
                         We can help you recover your wallet - quickly, easily and on a pure success basis.
                         You don't pay anything until you have access to your wallet again.
                     </p>
-                    <a href="#form" class="call-to-action"> Unlock your Wallet now </a>
+                    <a href="#form" class="unlock-btn"> Unlock your Wallet now </a>
                     <!-- ведёт на форму ниже-->
-                    <p> Our most recovered wallets: </p>
-                    <ul>
+                    <p class='rec-wallets'> Our most recovered wallets: </p>
+                    <ul class="wallet-list">
                         <li>
                             <a href="">
                                 <img src="./assets/icons/squares_1_.png" alt="">
@@ -102,7 +103,7 @@
 
                         </li>
                     </ul>
-                    <p> and many others.</p>
+                    <p class='rec-wallets'> and many others.</p>
                 </div>
                 <img src="" alt="">
             </div>
@@ -131,7 +132,7 @@
                             <img src="./assets/icons/Company logo.png" alt="">
                         </a>
                     </li>
-                    <li>
+                    <li>Unluck your
                         <a href="">
                             <img src="./assets/icons/cointele.png" alt="">
                         </a>
@@ -145,7 +146,7 @@
             </div>
         </section>
         <section>
-            <div class="wrapper" id="why-rewallet">
+            <div class="wrapper dark" id="why-rewallet">
                 <h2> Why ReWallet?</h2>
                 <p>
                     We had the same problem as you.
@@ -179,7 +180,7 @@
                         </p>
                     </li>
                 </ul>
-                <a href="" class="call-to-action"> Unlock your Wallet now </a>
+                <a href="" class="unlock-btn"> Unlock your Wallet now </a>
                 <!-- ведёт на форму ниже-->
             </div>
         </section>
@@ -213,8 +214,8 @@
             </div>
         </section>
         <section>
-            <div class="wrapper" id="process">
-                <h2>Our prosecc</h2>
+            <div class="wrapper dark" id="process">
+                <h2>Our process</h2>
                 <p>
                     Just fill out our questionnaire and we will
                     see if we can help you.
@@ -256,7 +257,7 @@
             </div>
         </section>
         <section>
-            <div class="wrapper" id="promise">
+            <div class="wrapper dark" id="promise">
                 <h2>Our promise to you</h2>
                 <ul>
                     <li>
@@ -286,7 +287,7 @@
                         </p>
                     </li>
                 </ul>
-                <a href="#form" class="call-to-action btn"> Unlock your Wallet now </a>
+                <a href="#form" class="unlock-btn"> Unlock your Wallet now </a>
                 <!-- ведёт на форму ниже-->
             </div>
         </section>
@@ -333,7 +334,7 @@
                         <a href="index.html">
                             <img src="" alt="News">
                             <p> <img src="" alt=""> Bruno Krauss </p>
-                            <time datetime="28-04-2023">28/04/2023</time> datetime
+                            <time datetime="28-04-2023">28/04/2023</time>
                             <h3>How to Recover Your Ethereum Presale Wallet:
                                 Tips To Recover Your Presale ETH
                             </h3>
@@ -353,7 +354,7 @@
                     </li>
                     <li>
                         <a href="index.html">
-                            <button> </button>
+                            <button class="btn"> </button>
                             <img src="" alt="News">
                             <p> <img src="" alt=""> Bastian Knaf </p>
                             <time datetime="28-04-2023"> 28/04/2023</time>
@@ -364,8 +365,9 @@
                         </a>
                     </li>
                 </ul>
-                <button class="call-to-action btn"> See more articles</button>
+                <button class="more-btn btn"> See more articles </button>
                 <!-- появятся больше новостей. не ссылка поэтому button-->
+                <!-- как сделать на весь раппер как a-->
             </div>
         </section>
         <section>
@@ -373,7 +375,7 @@
                 <h2> Frequently asked questions </h2>
                 <ul>
                     <li>
-                        <button>
+                        <button class="btn">
                             Can you recover my wallet?
                             <img src="" alt="">
                         </button>
@@ -384,34 +386,33 @@
                             we can help you find your wallet password or your seedphrase. We can also help you with the
                             physical recovery of your wallet.
                             Please send us a request via the contact form and we will give you feedback if and how we
-                            can
-                            help you.
+                            can help you.
                         </p>
                     </li>
                     <li>
-                        <button>
-                            <h3> Which wallets do you support? </h3>
+                        <button class="btn"> 
+                            Which wallets do you support? 
                             <img src="" alt="">
                         </button>
                         <p>Здесь явно что-то будет</p>
                     </li>
                     <li>
-                        <button>
-                            <h3> How do I start a request? </h3>
+                        <button class="btn"> 
+                             How do I start a request?
                             <img src="" alt="">
                         </button>
                         <p>Здесь явно что-то будет</p>
                     </li>
                     <li>
-                        <button>
-                            <h3> How does payment work? </h3>
+                        <button class="btn">
+                            How does payment work? 
                             <img src="" alt="">
                         </button>
                         <p>Здесь явно что-то будет</p>
                     </li>
                     <li>
-                        <button>
-                            <h3> Can I communicate with you in encrypted form? </h3>
+                        <button class="btn">
+                             Can I communicate with you in encrypted form? 
                             <img src="" alt="">
                         </button>
                         <p> Здесь явно что-то будет </p>
@@ -419,7 +420,7 @@
                 </ul>
             </div>
         </section>
-        <section class="Start-now">
+        <section class="start-now">
             <div class="wrapper">
                 <h2> Start now </h2>
                 <p> You have lost access to your crypto wallet?
@@ -442,22 +443,22 @@
                         </p>
                     </li>
                 </ul>
-                <form id="form">
+                <form id="form" class="dark">
                     <button></button>
                     <button></button>
                     <button></button>
                     <button></button>
                     <p>What wallet is it?</p>
-                    <button> Bitcoin </button>
-                    <button> Ethereum (ERC-20) </button>
-                    <button> Dogecoin </button>
-                    <button> Other </button>
+                    <button class="btn"> Bitcoin </button>
+                    <button class="btn"> Ethereum (ERC-20) </button>
+                    <button class="btn"> Dogecoin </button>
+                    <button class="btn"> Other </button>
                 </form>
             </div>
         </section>
         <section>
             <div class="wrapper">
-                <div id="get-in-touch">
+                <div id="get-in-touch" class="dark">
                     <img src="" alt="Bastian Knaf Photo">
                     <h2> Get in touch! </h2>
                     <p>Your contact - Bastian Knaf</p>
