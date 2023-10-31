@@ -127,8 +127,8 @@
   margin: 120px 0px 60px;
 }
 
-.landing h1 {
-  display: hidden;
+h1 , .partners h2{
+  display: none;
 }
 
 .trustpilot-btn {
@@ -342,6 +342,6 @@ font-weight: 600;
 #why-rewallet h2, #about h2, #process h2, #promise h2, #testimonials h2{
   margin-top:0px;
 }
-#promise ,#process,#why-rewallet {
-
+#why-rewallet li{
+  margin-bottom: 24px;
 }
