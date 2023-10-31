@@ -241,7 +241,7 @@ h2 {
 
 .wrapper {
   max-width: 700px;
-  padding: 0 1.5rem;
+  padding: 24px 1.5rem;
   margin: 0 auto;
 }
 
@@ -299,7 +299,10 @@ a {
 .btn {
   border: none;
 }
-
+.FAQ-btn{
+  padding: 0;
+  margin: 0;
+}
 .side-nav {
   display: none;
 }
@@ -339,6 +342,6 @@ font-weight: 600;
 #why-rewallet h2, #about h2, #process h2, #promise h2, #testimonials h2{
   margin-top:0px;
 }
-.dark {
-  padding-bottom: 24px;
+#promise ,#process,#why-rewallet {
+
 }
