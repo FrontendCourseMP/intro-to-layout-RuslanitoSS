@@ -44,21 +44,47 @@
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .footer_top nav {
   color: #475467;
   font-weight: 600;
   line-height: 24px;
 }
 
-.footer_top p {
+.score {
   color: var(--color-dark-blue);
+  font-weight: 600;
+}
 
+.trustpilot-logo {
+  margin-top: 5px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating .score {
+  margin: 0 0 0 10px;
+}
+
+.footer_top img {
+  margin-bottom: 25px;
+}
+
+.footer_top li {
+  margin-bottom: 15px;
 }
 
 .footer_bottom a {
   color: #475467;
   font-weight: 600;
   line-height: 24px;
+  margin-right: 35px;
 }
 
 .footer_bottom p {
@@ -78,7 +104,7 @@
 }
 
 #form {
-  margin: 48px 0px 60px;
+  margin: 48px 0px 30px;
   text-align: center;
 
 }
@@ -86,6 +112,11 @@
 .form-wrapper {
   padding: 1rem 1.5rem;
   margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
 }
 
 #form .btn {
@@ -105,7 +136,7 @@
 }
 
 .get-in-touch--wrapper {
-  padding: 1rem 1.5rem;
+  padding: 2.5rem 2rem;
   margin: 0 auto;
   color: var(--color-grey-300);
 }
@@ -114,6 +145,7 @@
   color: white;
   font-weight: 600;
   line-height: 52px;
+  margin: 0.7em 0 0.5em;
 }
 
 .get-in-touch--wrapper p,
@@ -121,14 +153,29 @@
   font-weight: 400;
   line-height: 32px;
   font-size: 1.7rem;
+  margin: 15px 0px;
+  display: block;
+}
+
+.get-in-touch--wrapper a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 #get-in-touch {
-  margin: 120px 0px 60px;
+  margin: 0px 0px 35px;
 }
 
-h1 , .partners h2{
+h1,
+.partners h2 {
   display: none;
+}
+
+.partners ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 12px;
 }
 
 .trustpilot-btn {
@@ -152,7 +199,7 @@ h1 , .partners h2{
   font-weight: 400;
   line-height: 26px;
   border-radius: 8px;
-  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.25);
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.05);
 }
 
 body {
@@ -227,6 +274,19 @@ h2 {
 
 }
 
+.article-info {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .articles p,
 .articles time {
   color: var(--color-grey-400);
@@ -235,12 +295,23 @@ h2 {
   margin: 0;
 }
 
+.author-photo {
+  border-radius: 50px;
+}
+
 .articles h3 {
-  margin: 5px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0px;
+}
+
+.articles li {
+  margin-top: 28px;
 }
 
 .wrapper {
-  max-width: 700px;
+  max-width: 1440px;
   padding: 24px 1.5rem;
   margin: 0 auto;
 }
@@ -260,6 +331,24 @@ strong {
   color: var(--color-grey-400);
   line-height: 24px;
   font-weight: 500;
+}
+
+.wallet-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wallet-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 12px;
+}
+
+
+.wallet-list img,
+.wallet-list p {
+  display: inline;
 }
 
 a {
@@ -283,7 +372,7 @@ a {
 
 .more-btn {
   display: flex;
-  padding: 10px 24px;
+  padding: 14px 24px;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
@@ -294,15 +383,35 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
   width: 100%;
+  margin: 48px 0px 0px;
 }
 
-.btn {
-  border: none;
+.start-now h2 {
+  margin-bottom: 0;
 }
-.FAQ-btn{
+
+.start-now p {
+  margin-bottom: 0;
+}
+
+.start-now ul {
+  margin: 25px 0px 35px
+}
+
+.FAQ-btn {
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  gap: 20px;
 }
+
+.get-in-touch--wrapper p {
+  margin: 15px 0px;
+}
+
 .side-nav {
   display: none;
 }
@@ -325,23 +434,71 @@ ol {
 .V-mark p {
   margin: 5px 0px;
 }
-.dark li .li-order{
+
+.dark li .li-order {
   display: flex;
-padding: 10px 12px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 8px;
-background-color: var(--color-dark-blue);
-color: white;
-font-weight: 600;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: var(--color-dark-blue);
+  color: white;
+  font-weight: 600;
 }
-#process li, #promise li {
+
+#process li,
+#promise li {
   margin: 24px 0px;
 }
-#why-rewallet h2, #about h2, #process h2, #promise h2, #testimonials h2{
-  margin-top:0px;
+
+.Rewallet-wallet {
+  display: flex;
+  width: 330px;
+  margin: 0 auto;
 }
-#why-rewallet li{
+
+.secure-wallet {
+  display: flex;
+  width: 330px;
+  margin: 0 auto;
+}
+
+blockquote img {
+  padding: 30px 0px 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#testimonals h2 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.review-heading,
+.review-heading-text {
+  text-align: center;
+}
+
+.block-heading,
+.block-heading-text {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+#testimonials a {
+  margin-top: 35px;
+}
+
+blockquote p {
+  margin: 0px;
+  padding: 0px 0px 15px;
+}
+
+#why-rewallet li {
   margin-bottom: 24px;
 }
