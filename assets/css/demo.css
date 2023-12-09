@@ -1,0 +1,44 @@
+.card-container {
+    perspective: 500px;
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+
+}
+.cardo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 140, 22);
+    border: 2px black solid;
+    width: 300px;
+    height: 500px;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+.card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 140, 22);
+    border: 2px black solid;
+    width: 300px;
+    height: 500px;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+.card:hover {
+    transform: rotateY(180deg)
+}
+.card-container:hover .back {
+    transform: rotateY( -180deg )
+}
+.front, .back {
+    backface-vis1ibility: hidden;
+}
+.back {
+    transform: rotateY( 180deg );
+    z-index:12;
+}
