@@ -53,6 +53,9 @@
   font-weight: 600;
   line-height: 24px;
 }
+.partners ul li img {
+  width: 130px;
+}
 
 .score {
   color: var(--color-dark-blue);
@@ -309,7 +312,6 @@ h2 {
 .articles li {
   margin-top: 28px;
 }
-
 .wrapper {
   max-width: 1440px;
   padding: 24px 1.5rem;
@@ -338,6 +340,7 @@ strong {
   align-items: center;
   gap: 8px;
   font-weight: 600;
+  margin-bottom: 15px;
 }
 .wallet-list a {
   display: flex;
@@ -461,15 +464,16 @@ ol {
 }
 
 .Rewallet-wallet {
-  display: flex;
-  width: 330px;
-  margin: 0 auto;
+  width: 95%;
+  position: relative;
+  left: 2.5%;
+  margin-top: 10px
 }
 
 .secure-wallet {
-  display: flex;
-  width: 330px;
-  margin: 0 auto;
+  width: 95%;
+  position: relative;
+  left: 2.5%;
 }
 
 blockquote img {
