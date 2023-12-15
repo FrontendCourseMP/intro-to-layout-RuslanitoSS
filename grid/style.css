@@ -1,3 +1,16 @@
+:root {
+    --color-dark-blue: #1a1e42;
+    --color-dark-blue-faded: rgb(26, 30, 66, 0.80);
+    --color-orange: #F7931A;
+    --color-white: #fff;
+    --color-grey-500: #667085;
+    --color-grey-400: #98A2B3;
+    --color-grey-300: #D0D5DD;
+    --color-grey-100: #F2F4F7;
+    --color-green: #00B67A;
+    font-size: 62.5%;
+  }
+  
 * {
     box-sizing: border-box;
 }
@@ -6,12 +19,61 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.btn {
+    border: none;
+    background-color: inherit;
+  }
 .wrapper {
     max-width: 720px;
     margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+  
 }
 
+.side-nav {
+    display: none;
+}
+.footer_top nav {
+    color: #475467;
+    font-weight: 600;
+    line-height: 24px;
+}
+.footer_top img {
+    margin-bottom: 25px;
+  }
+  
+  .footer_top li {
+    margin-bottom: 15px;
+  }
+  
+  .footer_bottom a {
+    color: #475467;
+    font-weight: 600;
+    line-height: 24px;
+    margin-right: 35px;
+  }
+  
+  .footer_bottom p {
+    color: var(--color-grey-400);
+    font-weight: 400;
+    line-height: 24px;
+  
+  }
+.footer {
+  background-color: var(--color-grey-100);
+
+}
+.rating {
+    display: flex;
+    align-items: center;
+  }
+.rating .score {
+  margin: 0 0 0 10px;
+}
 .wrapper-grid-1 {
     display: grid;
     grid-template-columns: repeat(5 1fr);
@@ -118,12 +180,17 @@ body {
     border: 2px solid blue;
 }
 
-img {
+.xadanie img {
     margin: 10px;
     border: 2px solid orange;
 
 }
-
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 .div1 {
     grid-area: 1 / 1 / 2 / 7;
 
@@ -156,7 +223,10 @@ img {
 
     margin: 5px;
 }
-
+a {
+    text-decoration: none;
+    color: inherit;
+  }
 .xadanie,
 .zadanie, .xadanie-3 {
     margin: 50px 0;

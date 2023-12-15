@@ -44,7 +44,7 @@
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-* {
+*,*::before {
   box-sizing: border-box;
 }
 
@@ -103,13 +103,11 @@
   line-height: 30px;
   font-weight: 400;
   margin: 25px 0;
-
 }
 
 #form {
   margin: 48px 0px 30px;
   text-align: center;
-
 }
 
 .form-wrapper {
@@ -170,9 +168,17 @@
   margin: 0px 0px 35px;
 }
 
-h1,
-.partners h2 {
-  display: none;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .partners ul {
@@ -483,7 +489,6 @@ blockquote img {
 .header {
   display: flex;
   justify-content: space-between;
-
 }
 
 #testimonals h2 {
