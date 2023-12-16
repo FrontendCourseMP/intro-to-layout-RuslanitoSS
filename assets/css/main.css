@@ -97,12 +97,16 @@
 
 }
 
-#form p {
+#form legend {
   color: white;
   font-size: 2.3rem;
   line-height: 30px;
   font-weight: 400;
-  margin: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+#form fieldset {
+  border: none;
 }
 
 #form {
@@ -260,11 +264,14 @@ h2 {
   background-color: var(--color-dark-blue);
   color: white;
 }
-
-.dark li {
+#why-rewallet ul, #process ol, #promise ul {
   display: flex;
-  padding: 32px;
   flex-direction: column;
+}
+.dark li {
+  display: inherit;
+  flex-direction: column;
+  padding: 32px;
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
