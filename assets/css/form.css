@@ -84,12 +84,13 @@ legend {
     background-color: var(--color-orange);
     border-radius: 8px;
     margin: 0 auto; 
-    padding: 8px 128px;
+    width: max(40%,148px);
     margin-top: 12px;
 }
 .form label {
     margin-top: 8px;
     margin-bottom: 10px;
+    display: block;
 }
 .form .form--gender-male,.form .form--gender-female,.form .form--gender-not_set {
     margin-left: 24px;
@@ -227,6 +228,7 @@ ol {
     outline: none;
     border: var(--color-dark-blue) 1px solid;
     padding: 6px 4px;
+    display: block;
 }
 .form:last-child {
     border-bottom: none;
@@ -242,7 +244,7 @@ ol {
 .form--time {
     display: flex;
     align-items: start;
-    gap: 4px;
+    gap: 6px;
 }
 
 .form input:focus {
@@ -254,4 +256,25 @@ ol {
 }
 .form .required:valid {
     border: 2px solid green;
+}
+
+.form .form--gender input {
+    display:inline;
+}
+.form .form--gender label {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.form select {
+    display: block;
+    overflow-y: hidden;
+}
+.form select option {
+    padding: 0.5em 1em;
+    border-bottom: solid 1px var(--color-grey-400);
+    
+}
+.form select option:last-child {
+    border: none;
 }
