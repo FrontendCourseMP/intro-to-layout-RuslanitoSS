@@ -48,71 +48,83 @@
 *::before {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.5rem;
   background-color: var(--color-white);
   margin: 0;
 }
+
 label {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 26px;
-    display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 26px;
+  display: block;
 }
+
 .form {
-    border-radius: 12px;
-    border: 3px solid var(--color-grey-100);
+  border-radius: 12px;
+  border: 3px solid var(--color-grey-100);
 }
+
 .form .required {
-    border: var(--color-orange) solid 2px;
+  border: var(--color-orange) solid 2px;
 }
+
 legend {
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 26px;
-    width: 100%;
-    text-align: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 26px;
+  width: 100%;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
-.form .submit--btn  {
-    font-size: 2.5rem;
-    line-height: 40px;
-    font-weight: 600;
-    display: block;
-    background-color: var(--color-orange);
-    border-radius: 8px;
-    margin: 0 auto; 
-    width: max(40%,148px);
-    margin-top: 12px;
+
+.form .submit--btn {
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-weight: 600;
+  display: block;
+  background-color: var(--color-orange);
+  border-radius: 8px;
+  margin: 0 auto;
+  width: max(40%, 148px);
+  margin-top: 12px;
 }
+
 .form label {
-    margin-top: 8px;
-    margin-bottom: 10px;
-    display: block;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  display: block;
 }
-.form .form--gender-male,.form .form--gender-female,.form .form--gender-not_set {
-    margin-left: 24px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+
+.form .form--gender-male,
+.form .form--gender-female,
+.form .form--gender-not_set {
+  margin-left: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .form .reset--btn {
-    font-size: 1.7rem;
-    font-weight: 400;
-    line-height: 26px;
-    margin: 0 auto; 
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 8px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
+
 p {
   font-size: 1.5rem;
   color: var(--color-dark-blue-faded);
   font-weight: 400;
   line-height: 26px;
 }
+
 h3 {
   font-size: 2.3rem;
   line-height: 30px;
@@ -126,27 +138,38 @@ h2 {
   font-weight: 600;
   color: var(--color-dark-blue);
 }
-.form h1{
-    font-size: 3.5rem;
-    line-height: 40px;
-    font-weight: 600;
+
+.form h1 {
+  font-size: 3.5rem;
+  line-height: 40px;
+  font-weight: 600;
 }
+
 .btn {
   border: none;
   background-color: inherit;
   color: inherit;
 }
+
+.btn:hover {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 .wrapper {
   max-width: 720px;
   padding: 24px 1.5rem;
   margin: 0 auto;
 }
-.footer {
+
+body .footer {
   background-color: var(--color-grey-100);
+  position: sticky;
+  top: 100vh;
 }
 
 .footer_top nav {
@@ -154,10 +177,12 @@ a {
   font-weight: 600;
   line-height: 24px;
 }
+
 .score {
   color: var(--color-dark-blue);
   font-weight: 600;
 }
+
 .rating {
   display: flex;
   align-items: center;
@@ -187,94 +212,112 @@ a {
   font-weight: 400;
   line-height: 24px;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
 }
+
 .side-nav {
   display: none;
 }
+
 .dark {
-    background-color: var(--color-dark-blue);
-    color: white;
-  }
-  
-  .dark p {
-    background-color: var(--color-dark-blue);
-    color: var(--color-grey-300);
-  }
-fieldset {
-    border: none;
-    border-bottom: solid 1px var(--color-grey-300);
+  background-color: var(--color-dark-blue);
+  color: white;
 }
-  .dark h2,
-  .dark h3 {
-    background-color: var(--color-dark-blue);
-    color: white;
-  }
+
+.dark p {
+  background-color: var(--color-dark-blue);
+  color: var(--color-grey-300);
+}
+
+fieldset {
+  border: none;
+  border-bottom: solid 1px var(--color-grey-300);
+}
+
+.dark h2,
+.dark h3 {
+  background-color: var(--color-dark-blue);
+  color: white;
+}
+
 ul,
 ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+
 .form input::placeholder {
-    color: var(--color-dark-blue);
-    background-color: white;
+  color: var(--color-dark-blue);
+  background-color: white;
 
 }
+
 .form input {
-    background-color: white;
-    outline: none;
-    border: var(--color-dark-blue) 1px solid;
-    padding: 6px 4px;
-    display: block;
+  background-color: white;
+  outline: none;
+  border: var(--color-dark-blue) 1px solid;
+  padding: 6px 4px;
+  display: block;
 }
+
 .form:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
+
 .form--header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.form--header h1{
-    margin: 0.1em 0;
+
+.form--header h1 {
+  margin: 0.1em 0;
 }
+
 .form--time {
-    display: flex;
-    align-items: start;
-    gap: 6px;
+  display: flex;
+  align-items: start;
+  gap: 6px;
 }
 
 .form input:focus {
-    box-shadow: 0 0 0 0.25rem rgba(124, 114, 114, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(124, 114, 114, 0.25);
 }
+
 .form .required:focus {
-    box-shadow: 0 0 0 0.25rem rgba(124, 114, 114, 0.25);
-    border: 2px solid white;
+  box-shadow: 0 0 0 0.25rem rgba(124, 114, 114, 0.25);
+  border: 2px solid white;
 }
+
 .form .required:valid {
-    border: 2px solid green;
+  border: 2px solid green;
 }
 
 .form .form--gender input {
-    display:inline;
+  display: inline;
 }
+
 .form .form--gender label {
-    display: flex;
-    gap: 6px;
-    align-items: center;
+  display: flex;
+  gap: 6px;
+  align-items: center;
 }
+
 .form select {
-    display: block;
-    overflow-y: hidden;
+  display: block;
+  overflow-y: hidden;
 }
+
 .form select option {
-    padding: 0.5em 1em;
-    border-bottom: solid 1px var(--color-grey-400);
-    
+  padding: 0.5em 1em;
+  border-bottom: solid 1px var(--color-grey-400);
+
 }
+
 .form select option:last-child {
-    border: none;
+  border: none;
 }
