@@ -54,15 +54,15 @@
         </fieldset>
         <fieldset class="form--main-top">
           <legend>Personal information</legend>
-          <label for="name">
+          <label for="username">
             Name
-            <input id="name" type="text" maxlength="50" placeholder="Your Name" required class="required">
+            <input id="username" type="text" maxlength="50" placeholder="Your Name" required class="required" name="username">
           </label>
 
           <label for="bdate">
             Date of birth
             <!-- Как покрасить текс плейсходера даты в белый?-->
-            <input id="bdate" type="date" required class="required">
+            <input id="bdate" type="date" required class="required" name="birth_date">
           </label>
           <p>Gender </p>
 
@@ -90,7 +90,7 @@
           <label for="password">
             Password
             <input id="password" type="password" minlength="8" maxlength="32" required class="required"
-              placeholder="S0mething_funny!">
+              placeholder="S0mething_funny!" name="password">
           </label>
         </fieldset>
         <fieldset class="form--main-mid">
