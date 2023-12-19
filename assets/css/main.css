@@ -633,3 +633,6 @@ blockquote p {
   background-image: url(../icons/Icon.svg);
   background-size: cover;
 }
+#form .form--header{
+  position: relative;
+}

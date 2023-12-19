@@ -52,3 +52,36 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.infinite-line {
+    margin: 50px auto;
+    max-width: 60%;
+    overflow: hidden;
+    border: 5px solid orange;
+    border-radius: 10px;
+}
+.infinite-line div {
+    display: flex;
+    width: 250%;
+    animation: infinite-loop 4s linear infinite;
+} 
+.infinite-line div h1 {
+    text-wrap: nowrap;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    width: 100%;
+}
+.infinite-line div h1 orange {
+    color: orange;
+}
+.infinite-line div h1 brown {
+    color: brown;
+}
+@keyframes infinite-loop {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
