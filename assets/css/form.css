@@ -335,13 +335,27 @@ ol {
 .form select option:last-child {
   border: none;
 }
-
+.form label input[type="radio"] {
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--color-grey-300);
+  transition: background-color 0.2s ease-in-out;
+}
+.form label input[type="radio"]:checked {
+  background-color: var(--color-orange);
+}
 .dl-form {
   font-size: 1.5rem;
   color: white;
-  border-radius: 10px;
+  border-radius: 12px;
 }
-
+.dl-form  label{ 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .dl-form dt::first-letter {
   font-size: 2rem;
   color: var(--color-orange)
@@ -371,4 +385,15 @@ ol {
 .pseudo-elements ul li:nth-of-type(2n+1),
 .pseudo-classes ul li:nth-of-type(2n+1) {
   color: var(--color-orange);
+}
+.dl-form label input[type="checkbox"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-grey-300);
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 4px;
+}
+.dl-form label input[type="checkbox"]:checked {
+  background-color: var(--color-orange);
 }

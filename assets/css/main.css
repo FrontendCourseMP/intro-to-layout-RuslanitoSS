@@ -618,3 +618,18 @@ blockquote p {
 .articles .blog--articles--news-img {
   width: 100%;
 }
+.start-now .V-mark p {
+  position: relative;
+  padding-left: 30px;
+}
+.start-now .V-mark p::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 0px;
+  background-image: url(../icons/Icon.svg);
+  background-size: cover;
+}
