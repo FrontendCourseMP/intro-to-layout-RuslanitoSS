@@ -75,13 +75,13 @@ body {
     color: orange;
 }
 .infinite-line div h1 brown {
-    color: brown;
+    color: rgba(92, 31, 0, 0.847);
 }
 @keyframes infinite-loop {
     0% {
-        transform: translateX(0%);
+        transform: translateX(-50%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(0);
     }
 }
