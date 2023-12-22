@@ -1,12 +1,12 @@
 :root {
   --color-dark-blue: #360036;
-  --color-dark-blue-faded: rgb(26, 30, 66, 0.80);
+  --color-dark-blue-faded: rgb(26, 30, 66, 0.8);
   --color-orange: #ff6a00;
   --color-white: #fff;
   --color-grey-500: #667085;
   --color-grey-400: #667085;
-  --color-grey-300: #D0D5DD;
-  --color-grey-100: #F2F4F7;
+  --color-grey-300: #d0d5dd;
+  --color-grey-100: #f2f4f7;
   --color-green: #028e5f;
   font-size: 62.5%;
 }
@@ -15,10 +15,10 @@
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/space-grotesk-v16-latin-regular.woff2') format('woff2');
+  src: url("./fonts/space-grotesk-v16-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -26,10 +26,10 @@
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 500;
-  src: url('./fonts/space-grotesk-v16-latin-500.woff2') format('woff2');
+  src: url("./fonts/space-grotesk-v16-latin-500.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -37,10 +37,10 @@
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 600;
-  src: url('./fonts/space-grotesk-v16-latin-600.woff2') format('woff2');
+  src: url("./fonts/space-grotesk-v16-latin-600.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -48,12 +48,11 @@
 *::before {
   box-sizing: border-box;
 }
-nav a{
+nav a {
   transition: color 0.2s ease-in-out;
 }
-nav a:hover{
+nav a:hover {
   color: var(--color-orange);
-
 }
 .skip-link {
   position: absolute;
@@ -61,7 +60,7 @@ nav a:hover{
   left: 0;
   background: var(--color-orange);
   color: white;
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-style: normal;
   font-size: 1.7rem;
   font-weight: 600;
@@ -124,7 +123,6 @@ footer nav {
   color: var(--color-grey-400);
   font-weight: 400;
   line-height: 24px;
-
 }
 
 #form legend {
@@ -146,7 +144,6 @@ footer nav {
 }
 
 .form-wrapper {
-  padding: 1rem 1.5rem;
   margin: 0 auto;
 }
 
@@ -168,14 +165,13 @@ footer nav {
   border-radius: 4px;
   width: 100%;
   margin: 12px 0px;
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
   font-size: 1.5rem;
   color: var(--color-dark-blue);
   font-weight: 400;
   line-height: 26px;
   border: 2px solid white;
   transition: all 0.2s ease-in-out;
-
 }
 #form .btn:hover {
   border-color: var(--color-orange);
@@ -187,15 +183,18 @@ footer nav {
   margin: 0 auto;
   color: var(--color-grey-300);
 }
-a:focus , button:focus {
+a:focus,
+button:focus {
   border: 2px solid black;
   outline: 2px white solid;
 }
-.dark a:focus, .dark button:focus {
+.dark a:focus,
+.dark button:focus {
   border: 2px solid white;
   outline: 2px black solid;
 }
-#form a:focus, #form button:focus {
+#form a:focus,
+#form button:focus {
   border: 4px solid orange;
   outline: 2px solid black;
 }
@@ -242,6 +241,7 @@ a:focus , button:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px 12px;
+  justify-items: center;
 }
 
 .trustpilot-btn {
@@ -254,20 +254,25 @@ a:focus , button:focus {
   font-weight: 600;
   font-size: 1.5rem;
   color: white;
+  max-width: 300px;
+  margin: 0 auto;
   transition: box-shadow 0.2 ease-in-out;
 }
 .trustpilot-btn:hover {
   box-shadow: rgba(0, 0, 0, 0.493) 1px 2px;
 }
-a:active , button:active {
+a:active,
+button:active {
   border: 2px solid black;
   outline: 2px white solid;
 }
-.dark a:active, .dark button:active {
+.dark a:active,
+.dark button:active {
   border: 2px solid white;
   outline: 2px black solid;
 }
-#form a:active, #form button:active {
+#form a:active,
+#form button:active {
   border: 4px solid orange;
   outline: 2px solid black;
 }
@@ -280,14 +285,27 @@ a:active , button:active {
   font-weight: 400;
   line-height: 26px;
   border-radius: 8px;
+  margin: 0 auto;
+  max-width: 600px;
   box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.05);
 }
-
+.list-review {
+  display: flex;
+  overflow-x: hidden;
+}
+#testimonials {
+  overflow: hidden;
+}
+.list-review li:last-child {
+  scale: 0.8;
+  display: none;
+}
 body {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.5rem;
   background-color: var(--color-white);
   margin: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -348,18 +366,17 @@ h2 {
   gap: 24px;
   align-self: stretch;
   border-radius: 8px;
-  background-color: #2A2D51;
+  background-color: #2a2d51;
 }
 
 .dark li h3,
 .dark li p {
-  background-color: #2A2D51;
+  background-color: #2a2d51;
   margin: 0;
 }
 
 .footer {
   background-color: var(--color-grey-100);
-
 }
 
 .article-info {
@@ -395,11 +412,13 @@ h2 {
 }
 
 .articles li {
+  max-width: 400px;
+  margin: 0 auto;
   margin-top: 28px;
 }
 
 .wrapper {
-  max-width: 720px;
+  max-width: 1440px;
   padding: 24px 1.5rem;
   margin: 0 auto;
 }
@@ -411,7 +430,7 @@ ol {
 }
 
 strong {
-  color: var(--color-orange)
+  color: var(--color-orange);
 }
 
 .wallet-list li p,
@@ -445,8 +464,6 @@ strong {
   gap: 16px 12px;
 }
 
-
-
 .wallet-list img,
 .wallet-list p {
   display: inline;
@@ -466,12 +483,12 @@ a {
   border-radius: 4px;
   background-color: var(--color-orange);
   color: white;
-  border: none;
   font-size: 1.5rem;
   font-weight: 600;
-  margin: 24px 0px;
+  margin: 24px auto;
   transition: all 0.2s ease-in-out;
-  border: 1px solid var(--color-orange)
+  border: 1px solid var(--color-orange);
+  max-width: 252px;
 }
 .unlock-btn:hover {
   background-color: var(--color-dark-blue);
@@ -489,10 +506,10 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
   width: 100%;
-  margin: 48px 0px 0px;
+  margin: 48px auto 0px;
+  max-width: 300px;
   border: 1px solid var(--color-orange);
   transition: all 0.2s ease-in-out;
-
 }
 .more-btn:hover {
   background-color: var(--color-dark-blue);
@@ -507,7 +524,7 @@ a {
 }
 
 .start-now ul {
-  margin: 25px 0px 35px
+  margin: 25px 0px 35px;
 }
 
 .FAQ-btn {
@@ -542,7 +559,10 @@ ol {
   color: var(--color-dark-blue);
   text-align: left;
 }
-
+#FAQ {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .V-mark p {
   margin: 5px 0px;
 }
@@ -565,16 +585,19 @@ ol {
 }
 
 .Rewallet-wallet {
-  width: 95%;
-  position: relative;
-  left: 2.5%;
-  margin-top: 10px
+  width: min(450px, 90%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
 .secure-wallet {
-  width: 95%;
-  position: relative;
-  left: 2.5%;
+  width: min(450px, 90%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
 blockquote img {
@@ -584,6 +607,7 @@ blockquote img {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #testimonals h2 {
@@ -622,7 +646,7 @@ blockquote p {
   position: relative;
   padding-left: 30px;
 }
-.start-now .V-mark p::before{
+.start-now .V-mark p::before {
   content: "";
   display: block;
   position: absolute;
@@ -633,6 +657,224 @@ blockquote p {
   background-image: url(../icons/Icon.svg);
   background-size: cover;
 }
-#form .form--header{
+#form .form--header {
+  padding-top: 1em;
+}
+#form .form--header {
   position: relative;
+}
+ul.articles {
+  max-width: 1280px;
+}
+
+.header ul {
+  display: none;
+}
+.form .form---main ul li {
+  background-color: var(--color-dark-blue);
+  border-radius: 0px;
+  padding: 0px;
+}
+@media screen and (min-width: 601px) {
+  .partners ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px 12px;
+    justify-items: center;
+  }
+  .wallet-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+}
+@media screen and (min-width: 767px) {
+  ul.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow-x: hidden;
+    gap: 2em;
+    margin: 0 auto;
+  }
+
+  ul.articles li {
+    width: 400px;
+  }
+  .get-in-touch--wrapper {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 4em;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header .btn {
+    display: none;
+  }
+  .header ul {
+    display: flex;
+  }
+  .header nav {
+    color: var(--color-dark-blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header nav li {
+    margin-left: 16px;
+  }
+  .header-lang {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  .header .start-now-btn {
+    display: inline-block;
+    color: var(--color-dark-blue);
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: 1px solid var(--color-dark-blue);
+    margin-left: 16px;
+  }
+  .landing-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .landing-wrapper .unlock-btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #main-content {
+    max-width: 500px;
+  }
+  .Rewallet-wallet {
+    display: inline-block;
+    margin: 0;
+  }
+  .partners ul {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  #why-rewallet p {
+    max-width: 700px;
+    margin-bottom: 40px;
+  }
+  #promise p {
+    max-width: 700px;
+  }
+  #why-rewallet ul,
+  #promise ul {
+    flex-direction: row;
+  }
+  #why-rewallet ul li,
+  #promise ul li {
+    margin-left: 16px;
+  }
+  #why-rewallet ul li:first-child,
+  #promise ul li:first-child {
+    margin-left: 0;
+  }
+  #about div {
+    max-width: 500px;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #process ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
+  #process li {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    max-width: min(90%, 600px);
+  }
+  #process li h3 {
+    margin-bottom: 15px;
+  }
+  .list-review li:last-child {
+    display: block;
+  }
+  .list-review {
+    transform: translateX(25%);
+  }
+  .start-now .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .start-now .wrapper div.start-now-left {
+    max-width: 40%;
+  }
+  .start-now .wrapper form {
+    width: 50%;
+  }
+  .form .form---main ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
+  .form ul {
+    padding: 0px;
+  }
+  .form ul li {
+    width: 90%;
+  }
+  .footer_top .footer--nav-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .footer_top nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_top nav ul li {
+    margin-left: 16px;
+  }
+  .footer_top nav ul li:first-child {
+    margin-left: 0;
+  }
+  .footer_top li {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header nav ul li {
+    margin-left: 24px;
+  }
+  .Rewallet-wallet {
+    width: 540px;
+  }
+  #main-content {
+    width: 520px;
+  }
+  .secure-wallet {
+    width: 540px;
+  }
+  #FAQ {
+    max-width: 1000px;
+  }
+  .wrapper {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .start-now .wrapper {
+    padding: 24px 4em;
+  }
+  .get-in-touch .wrapper {
+    padding: 24px 4em;
+  }
+  .footer_top nav ul li {
+    margin-left: 24px;
+  }
+  .footer_top nav ul li:first-child {
+    margin-left: 0;
+  }
 }
