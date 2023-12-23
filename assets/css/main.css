@@ -681,6 +681,7 @@ ul.articles {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px 12px;
     justify-items: center;
+    align-items: center;
   }
   .wallet-list {
     grid-template-columns: 1fr 1fr 1fr;
